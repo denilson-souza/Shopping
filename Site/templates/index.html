@@ -9,7 +9,7 @@
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder">Destaques</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Os melhores produtos com os melhores preços!</p>
+                    <p class="lead fw-normal text-white-50 mb-0">Os melhores produtos com os melhores preços, você só encontra aqui!</p>
                 </div>
             </div>
         </header>
@@ -21,13 +21,9 @@
                     
                     
                     <!-- Inicio Produtos -->
-                    {% include 'card_produto.html'%}
-                    <!-------->
-                    {% include 'card_produto.html'%}
-                    <!-------->
-                    {% include 'card_produto.html'%}
-                    <!-------->
-                    {% include 'card_produto.html'%}
+                    {% for prod in produtos %}
+                    {% include 'card_produto.html'%}  
+                    {% endfor %}
                     <!-- termino produtos-->
                 </div>
             </div>
